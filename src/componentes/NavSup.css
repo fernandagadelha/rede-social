@@ -1,0 +1,77 @@
+body {
+    background-color: #24252A;
+    
+}
+
+header {
+    display: flex;    
+    align-items: center;
+
+}
+nav {       
+    background-color: rgba(163, 36, 95, 0.068);
+    border-radius: 10em;
+    max-height: 100px;
+    width: 100%;
+    
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+li {
+    
+    padding: 20px;
+    margin: 10px;    
+    text-align: center;
+    
+    
+}
+
+div img {
+    /*background-color: lightslategrey;*/
+    max-height: 100px;
+    width:30px;
+    padding: 20px;
+    margin: 10px;
+    
+    
+    
+}
+
+button {
+    /*border-color: rgba(119, 136, 153, 0.411);
+    border-radius: 10em;*/
+    border: none;
+    border-radius: 10em;
+    background: none;
+    color: white;
+    
+    
+    
+}
+
+
+
+
+button:hover {
+    background: rgba(214, 63, 85, 0.404);
+}
+
+button:active {
+    background: lightseagreen;
+}
+
+
+
+
+
+
