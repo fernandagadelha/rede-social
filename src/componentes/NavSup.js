@@ -6,13 +6,15 @@ class NavSup extends React.Component {
     render() {
         return (
             <header>
-                <button><img src={LogoApp} alt="Logo da Rede Social" className="logoApp"/></button>
+                <img src={LogoApp} alt="Logo da Rede Social" className="logoApp"/>
 
                 <nav className="nav">
                     <ul className="navlist">
                         <li className="linhaTempo"><button>Linha do Tempo</button></li>
                         <li className="perfil"><button>Perfil</button></li>
+                        <li className="usuario">Fernanda</li>
                     </ul>
+
 
                 </nav>
             

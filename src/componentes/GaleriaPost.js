@@ -1,20 +1,19 @@
 import React from 'react';
-import './GaleriaPost.css';
+
+import Post from './Post';
+
 
 class GaleriaPost extends React.Component {
     render() {
         return (
-            <main>
-                <div className="galeria">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
+            
+            <div className="galeria">
+                <Post></Post>
                 
-            </main>
+                
+            </div>
+                
+            
         )
     }
   }

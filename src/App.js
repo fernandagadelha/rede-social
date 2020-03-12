@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import NavSup from './componentes/NavSup.js';
 import GaleriaPost from './componentes/GaleriaPost';
+
 import './App.css';
 
 
