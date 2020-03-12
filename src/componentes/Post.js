@@ -9,7 +9,7 @@ class Post extends React.Component {
                 
                 <img src={Imagem} alt="imagem"></img>
                 <div className="usuarioAutor">Fernanda</div>
-                <div className="legenda">Demorei um tempinho nessa aqui. Espero que gostem!</div>
+                <div className="legenda">Demorei um tempinho nessa ilustração aqui. Espero que gostem!</div>
                 
                 
             </div>
