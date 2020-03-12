@@ -1,0 +1,27 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.posts {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+
+
+
