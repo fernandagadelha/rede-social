@@ -1,25 +1,86 @@
 .post {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
+    flex-direction: column;    
+    background-color: #424C55;
     max-width: 600px;
-    border-radius: 2em;
+    border-radius: 0.3em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 30px;    
+    color: white;
     
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 ul.posts {
     list-style-type: none;
     display: inline-block;
+}
+
+.postHeader {
+    border-bottom: 1px solid gainsboro;
+    height: 70px;
+    border-radius: 0.3em 0.3em 0 0;
+}
+
+.usuarioAutor {
+    background-color: rgba(214, 63, 85, 0.404);
+    border-radius: 1em;
+    padding: 5px;
+    font-size: smaller;
+    max-width: 40px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.tempo {
+    font-weight: lighter;
+    font-size: 11px;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.legenda {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.interacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    margin: 0 20px 8px;
+    
+    
+}
+
+button.reagir {
+    border: none;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+    background: rgba(214, 63, 85, 0.404);
+}
+
+button:active {
+    background: lightseagreen;
+}
+
+.destaque {
+    color: aqua;
+}
+
+.destaque:hover {
+    color: pink;
 }
 
 

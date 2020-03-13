@@ -10,8 +10,8 @@ class NavSup extends React.Component {
 
                 <nav className="nav">
                     <ul className="navlist">
-                        <li className="linhaTempo"><button>Linha do Tempo</button></li>
-                        <li className="perfil"><button>Perfil</button></li>
+                        <li className="linhaTempo"><button className="botaoNav">Linha do Tempo</button></li>
+                        <li className="perfil"><button className="botaoNav">Perfil</button></li>
                         <li className="usuario">Fernanda</li>
                     </ul>
 

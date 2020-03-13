@@ -1,11 +1,10 @@
-body {
-    background-color: #24252A;
-    
-}
+
 
 header {
     display: flex;    
     align-items: center;
+    
+    
 
 }
 nav {       
@@ -51,7 +50,7 @@ div img {
     
 }
 
-button {
+button.botaoNav {
     /*border-color: rgba(119, 136, 153, 0.411);
     border-radius: 10em;*/
     border: none;
