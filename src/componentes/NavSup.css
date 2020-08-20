@@ -8,8 +8,9 @@ header {
 
 }
 nav {       
-    background-color: rgba(163, 36, 95, 0.068);
-    border-radius: 10em;
+    background-color: black;
+    
+    /* border-radius: 10em; */
     max-height: 100px;
     width: 100%;
     
