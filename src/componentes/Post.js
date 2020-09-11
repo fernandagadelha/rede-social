@@ -13,7 +13,8 @@ class Post extends React.Component {
         super(props);
         this.id = props.id;
         this.mensagem = props.mensagem;
-        this.nomePessoa = props.nomePessoa;
+        this.nome = props.nome;
+        this.qtdLikes = props.qtdLikes;
         
     }
 
@@ -23,14 +24,15 @@ class Post extends React.Component {
                 <div className="post">
                     
                     <div className="postHeader">
-                        <div className="usuarioAutor">{this.nomePessoa}</div>
+                        <div className="usuarioAutor">{this.nome}</div>
+                        <a href>Excluir</a>
+                        
                         
                     </div>                 
                                   
                     <div className="legenda">{this.mensagem}</div>
                     <div className="interacao">
-                        
-                        <BotaoLike ></BotaoLike>
+                        <BotaoLike ></BotaoLike>                        
                         <BotaoComentario></BotaoComentario>
                         <BotaoCompartilhamento></BotaoCompartilhamento>
 

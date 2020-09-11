@@ -12,9 +12,7 @@ class BotaoLike extends React.Component{
         this.setState({
             qtdLikes: this.state.qtdLikes + 1,
         })
-
-        
-
+       
                
     }
         

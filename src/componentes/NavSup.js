@@ -1,27 +1,32 @@
 import React from 'react';
-import './NavSup.css';
+// import './NavSup.css';
 import LogoApp from './logoredesocial.svg';
+import { NavItems } from './NavItems';
+import './NavItems.css'
+
+
+
 
 class NavSup extends React.Component {
     render() {
         return (
-            <header>
-                <img src={LogoApp} alt="Logo da Rede Social" className="logoApp"/>
-
-                <nav className="nav">
-                    <ul className="navlist">
-                        <li className="linhaTempo"><button className="botaoNav">Linha do Tempo</button></li>
-                        <li className="perfil"><button className="botaoNav">Perfil</button></li>
-                        <li className="usuario">Fernanda</li>
-                    </ul>
-
-
-                </nav>
-            
-            </header>
-
-            
-            
+                          
+                
+            <nav className="NavItems">
+                <span><img src={LogoApp} alt="Logo da Rede Social" height="36px" widht="36px" className="logoApp"/></span>
+                <ul className="nav-menu">
+                    {NavItems.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <a className={item.cName} href={item.url}>
+                                {item.title}
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
+                <span><i className="fas fa-user"></i></span>
+            </nav>
         )
     }
 }
