@@ -3,15 +3,15 @@ const { ADICIONAR_POST } = require("../constants");
 const estadoInicial = {
     posts: [
         {
-            "id": "1",
-            "nome": "Garnet",
-            "mensagem": "Gostei muito dessa rede social. Já encontrei muitas gems interessadas em entender melhor sobre as fusões.",
+            "id": "",
+            "nome": "",
+            "mensagem": "",
             "qtdLikes": ""
         },
         {
-            "id": "2",
-            "nome": "Steven",
-            "mensagem": "Aprendi uma receita totalmente nova com meu grupo de gastronomia!",
+            "id": "",
+            "nome": "",
+            "mensagem": "",
             "qtdLikes": ""
         },
     ]
@@ -20,7 +20,7 @@ const estadoInicial = {
 
 function ReducerRaiz(state = estadoInicial, action){
     if(action.type === ADICIONAR_POST){
-        let new_state = {...state};
+        let new_state = {...state}; //esse new_state aqui é a cópia do estado atual (estadoInicial)
         new_state.posts.push({
             nome: action.payload.nome,
             mensagem: action.payload.mensagem,

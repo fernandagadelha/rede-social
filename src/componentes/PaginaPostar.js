@@ -3,16 +3,20 @@ import { adicionarPost } from '../actions';
 import { connect } from 'react-redux';
 
 
-export class PaginaPostar extends Component {
+class PaginaPostar extends Component {
 
     state = {
+        id: 1,
         nome: "",
-        mensagem: ""
+        mensagem: "",
+        qtdLikes: ""
     }
 
     constructor(props){
         super(props);
-        this.adicionarPost = props.adicionarPost;
+        this.adicionarPost = props.adicionarPostprops;
+        console.log("adicionar post");
+        console.log(props);
     }
 
     modificouFormulario = (event) =>{
@@ -25,13 +29,15 @@ export class PaginaPostar extends Component {
     }
 
     submeterFormulario = (event) =>{
-        // event.preventDefault();
+        event.preventDefault();
         this.adicionarPost(this.state.nome, this.state.mensagem);
         this.setState({
+            id: this.props.id +1,
             nome: "",    //quero que os inputs sejam esvaziados quando eu submeter o form
             mensagem: "",
             
         })
+        console.log("funcionou");
     }
 
     render() {
@@ -49,9 +55,9 @@ export class PaginaPostar extends Component {
 
 function mapDispatchToProps(dispatch){
     return {
-        adicionarPost: (nome, mensagem) => {
-            dispatch(adicionarPost({nome:nome, mensagem:mensagem}))
-        },
+        adicionarPostprops: (nome, mensagem) => {                        //ATENÇAO: essa função é diferente daquela que cria Ação e que tá lá no actions
+            dispatch(adicionarPost({nome:nome, mensagem:mensagem}))  //no parâmetro, passo o payload
+        }
 
     };
 }

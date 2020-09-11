@@ -7,6 +7,7 @@ import PaginaPostar from './componentes/PaginaPostar.js';
 
 
 
+
 class App extends Component {
   render() {
     return (
@@ -14,7 +15,8 @@ class App extends Component {
     <div className="App">
       
       <BrowserRouter>
-        
+      
+
         <Route exact path="/">
           <NavSup></NavSup>
           <GaleriaPost></GaleriaPost>
@@ -24,10 +26,11 @@ class App extends Component {
           <NavSup></NavSup>
           <PaginaPostar></PaginaPostar>
         </Route>
+        
       </BrowserRouter>
 
             
-      {/* <GaleriaPost></GaleriaPost> */}
+      
     </div>
   );
   }
