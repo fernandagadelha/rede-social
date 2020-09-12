@@ -7,17 +7,17 @@ import { connect } from 'react-redux';
 
 class GaleriaPost extends React.Component {
 
-    state = {
-        posts: [
-            {id:1, nome:"Garnet", mensagem:"Gostei muito dessa rede social. Já encontrei muitas gems interessadas em entender melhor sobre as fusões."},
-            {id:2, nome:"Steven", mensagem:"Aprendi uma receita totalmente nova com meu grupo de gastronomia!"},
-        ]
+    constructor(props){
+        console.log("GaleriaPost constructor")
+        super(props);
+        this.posts = props.posts;
+    
     }
 
        
     render(){
         let posts = [];
-        for(let p of this.state.posts){
+        for(let p of this.posts){
             posts.push(
                 <Post
                     id={p.id}
@@ -40,6 +40,7 @@ class GaleriaPost extends React.Component {
 }
 
 const mapStateToProps = (state, props) =>{
+    console.log("mapStateToProps")
     return {posts: state.posts};
         
 }

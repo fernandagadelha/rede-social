@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 // import './NavSup.css';
 import LogoApp from './logoredesocial.svg';
 import { NavItems } from './NavItems';
@@ -18,9 +19,9 @@ class NavSup extends React.Component {
                     {NavItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                                <NavLink className={item.cName} to={item.url}>
                                 {item.title}
-                                </a>
+                                </NavLink>
                             </li>
                         )
                     })}

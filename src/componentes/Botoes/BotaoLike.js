@@ -12,7 +12,7 @@ class BotaoLike extends React.Component{
     incrementarLike = () =>{
         
         this.setState({
-            qtdLikes: this.state.qtdLikes + 1,
+            qtdLikes: Number(this.state.qtdLikes) + 1,
         })
        
                

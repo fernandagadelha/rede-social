@@ -30,9 +30,9 @@ class PaginaPostar extends Component {
 
     submeterFormulario = (event) =>{
         event.preventDefault();
-        this.adicionarPost(this.state.nome, this.state.mensagem);
+        this.adicionarPost(this.state.id, this.state.nome, this.state.mensagem);
         this.setState({
-            id: this.props.id +1,
+            id: Number(this.props.id) + 1,
             nome: "",    //quero que os inputs sejam esvaziados quando eu submeter o form
             mensagem: "",
             
@@ -55,8 +55,9 @@ class PaginaPostar extends Component {
 
 function mapDispatchToProps(dispatch){
     return {
-        adicionarPostprops: (nome, mensagem) => {                        //ATENÇAO: essa função é diferente daquela que cria Ação e que tá lá no actions
-            dispatch(adicionarPost({nome:nome, mensagem:mensagem}))  //no parâmetro, passo o payload
+        adicionarPostprops: (id, nome, mensagem) => {                        //ATENÇAO: essa função é diferente daquela que cria Ação e que tá lá no actions
+            console.log("adicionar post: "+ id +  ", " + nome + ", " + mensagem)
+            dispatch(adicionarPost({id:id, nome:nome, mensagem:mensagem}))  //no parâmetro, passo o payload
         }
 
     };

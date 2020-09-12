@@ -25,7 +25,7 @@ class Post extends React.Component {
                     
                     <div className="postHeader">
                         <div className="usuarioAutor">{this.nome}</div>
-                        <a href>Excluir</a>
+                        
                         
                         
                     </div>                 
